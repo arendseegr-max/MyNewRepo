@@ -1,25 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Advantages</title>
-  <link rel="stylesheet" href="ex8.css">
-</head>
-<body>
-  <h1>CSS Advantages</h1>
+body {
+  background-color: #ffffff;
+  color: #000099;  
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  <ul>
-    <li>Consistency across pages</li>
-    <li class="news">Design flexibility</li>
-    <li>Easier maintenance</li>
-    <li>Faster page loading</li>
-  </ul>
+a {
+  background-color: #CCCCCC;  
+}
 
-  <p>
-    Contact me: <a href="mailto:arendseegr@mail.lipscomb.edu">arendseegr@mail.lipscomb.edu</a>
-  </p>
-</body>
-</html>
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;           
+}
 
+.news {
+  color: red;
+  font-style: italic;
 }
