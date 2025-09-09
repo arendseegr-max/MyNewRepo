@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Advantages</title>
+  <link rel="stylesheet" href="ex8.css">
+</head>
+<body>
+  <h1>CSS Advantages</h1>
+
+  <ul>
+    <li>Consistency across pages</li>
+    <li class="news">Design flexibility</li>
+    <li>Easier maintenance</li>
+    <li>Faster page loading</li>
+  </ul>
+
+  <p>
+    Contact me: <a href="mailto:arendseegr@mail.lipscomb.edu">arendseegr@mail.lipscomb.edu</a>
+  </p>
+</body>
+</html>
+
+}
