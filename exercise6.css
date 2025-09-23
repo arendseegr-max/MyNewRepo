@@ -1,38 +1,39 @@
 
 a:link{
-  color:#0a3d91;         
-  background:#e6f4ff;    
+  color: blue;         
+  background: lightblue;    
   text-decoration: underline;
 }
 a:visited{
-  color:#6b21a8;        
-  background:#f5e8ff;   
+  color: purple;           
+  background: lavender;    
 }
 a:hover{
-  color:#0f766e;        
-  background:#d1fae5;   
-  text-decoration: none; 
+  color: darkblue;            
+  background: lightblue;  
+  text-decoration: none;   
 }
 a:active{
-  color:#b91c1c;
-  background:#fee2e2;
+  color: red;   
+  background: pink;  
 }
 
-/* Basic page look */
+
 body{
   margin:0;
   font:16px/1.6 Arial, Helvetica, sans-serif;
-  background:#f7fafc;
-  color:#222;
+  background: white; 
+  color: black;           
   padding:1rem;
 }
 .wrapper{ max-width:900px; margin:0 auto; }
 ul.links{ list-style:disc; padding-left:1.25rem; display:grid; gap:.35rem; }
 
 footer{
-  background:#e6f4ff;
-  color:#0a3d91;
+  background: lightblue;   
+  color: blue;        
   padding:10px;
-  border-top:1px dashed #0a3d91;
+  border-top:1px blue;
   margin-top:2rem;
 }
+
