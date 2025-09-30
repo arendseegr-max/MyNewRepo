@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOP 7.4 – Grid with Line Numbers</title>
+<link rel="stylesheet" href="mobile/ch7hop-mobile.css" media="(max-width: 480px)">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.4; }
+  img { max-width: 100%; height: auto; display: block; }
+
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px auto 50px;
+    min-height: 100vh;
+  }
+
+ 
+  header { grid-row: 1 / 2; grid-column: 1 / 3; background:#light blue; padding: .75rem 1rem; }
+  nav    { grid-row: 2 / 3; grid-column: 1 / 2; background:light blue; padding: 1rem; }
+  main   { grid-row: 2 / 3; grid-column: 2 / 3; padding: 1rem; }
+  footer { grid-row: 3 / 4; grid-column: 1 / 3; background:light blue; text-align:center; padding:.5rem; font-size:.9rem; }
+
+  header h1 { margin: 0; }
+  nav ul { list-style: none; margin: 0; padding: 0; }
+  nav a { text-decoration: none; color: dark blue; }
+  .hero { float: right; width: 260px; margin: 0 0 1rem 1rem; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <header><h1>Lighthouse Island Bistro</h1></header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Directions</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <img src="images/light2.jpg" alt="Lighthouse" class="hero">
+    <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h3>Specialty Pastries</h3>
+    <p>Fresh-baked organic pastries: muffins, scones, croissants, and cinnamon rolls.</p>
+    <h3>Lunchtime Is Anytime</h3>
+    <p>Wraps and sandwiches on hearty whole-grain breads with locally-grown salad, fruit, and vegetables.</p>
+  </main>
+
+  <footer>Copyright © 2025</footer>
+</div>
+</body>
+</html>
