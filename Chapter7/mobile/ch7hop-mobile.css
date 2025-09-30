@@ -1,0 +1,15 @@
+
+  #wrapper {
+    display: grid ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+  header, nav, main, footer, aside {
+    grid-column: 1 / -1;
+  }
+}
