@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOP 7.5 – Grid Template Areas</title>
+<link rel="stylesheet" href="mobile/ch7hop-mobile.css" media="(max-width: 480px)">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.45; }
+  img { max-width: 100%; height: auto; display: block; }
+
+  header { grid-area: header; }
+  nav    { grid-area: nav; }
+  main   { grid-area: main; }
+  aside  { grid-area: aside; }
+  footer { grid-area: footer; }
+
+  #wrapper{
+    display: grid;
+    grid-template-columns: 150px 1fr 30%;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+      "header header header"
+      "nav    main   aside"
+      "footer footer footer";
+    min-height: 100vh;
+  }
+
+  header{
+    background: #244d94 url("images/lighthouselogo.jpg") center/contain no-repeat;
+    color:#fff; display:flex; align-items:center; justify-content:center; padding:0 1rem;
+  }
+  header h1{ margin:0; text-shadow:0 1px 2px rgba(0,0,0,.4); }
+
+  nav{ background:#f3f6fb; padding:1rem; }
+  nav ul{ list-style:none; margin:0; padding:0; }
+  nav li{ margin:.35rem 0; }
+  nav a{ color:#0b3d91; text-decoration:none; }
+
+  main{ padding:1rem 1.25rem; }
+  aside{ padding:1rem; background:#f8fbff; border-left:1px solid #e6eefc; }
+  footer{ background:#e5ecfa; text-align:center; padding:.5rem; font-size:.9rem; }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <header><h1>Casita Sedona</h1></header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Rooms</a></li>
+      <li><a href="#">Specials</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Located in the Heart of Sedona</h2>
+    <p>Enjoy views, luxurious rooms, and hearty breakfasts.</p>
+    <figure>
+
+      <img src="images/showybg.jpg" alt="Sedona scenery">
+      <figcaption>Guided hikes available daily.</figcaption>
+    </figure>
+  </main>
+
+  <aside>
+    <h3>Luxurious Rooms</h3>
+    <p>King beds, patios, and spa access.</p>
+  </aside>
+
+  <footer>Copyright © 2025</footer>
+</div>
+</body>
+</html>
