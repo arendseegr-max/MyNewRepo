@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ch6HOP6-2 — Normal Flow and Box Model</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+
+    body { margin: 0; font-family: Arial, sans-serif; background:#f6f6f6; color:#111; }
+    .wrap { max-width: 900px; margin: 0 auto; background:#fff; border:1px solid #ddd; padding: 18px 20px 30px; }
+    h1 { margin: 0 0 8px; }
+    h2 { margin: 24px 0 10px; }
+
+
+    .div1 {
+      width: 200px;
+      height: 200px;
+      background-color: #D1ECFF;
+      border: 3px dashed #000000;
+      padding: 5px;
+      margin-bottom: 16px;
+    }
+    .div2 {
+      width: 100px;
+      height: 100px;
+      background-color: #FFFFFF;
+      border: 3px ridge #000000;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    code { background:#f3f5f7; padding:2px 4px; border-radius:4px; }
+    .hr { height:1px; background:#e6e6e6; margin:22px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Hands-On Practice 6.2</h1>
+
+    <h2>Practice with Normal Flow</h2>
+
+    <div class="div1">This is the first box.</div>
+    <div class="div2">This is the second box.</div>
+
+    <div class="hr"></div>
+
+
+    <h2>Practice with Normal Flow and Nested Elements</h2>
+
+    <div class="div1">
+      This is the outer box.
+      <div class="div2">
+        This is the inner box.
+      </div>
+    </div>
+
+    <p style="margin-top:18px;">
+      The inner box appears inside the outer box because it’s coded inside it—an example of
+      <em>normal flow</em> with nested elements.
+    </p>
+  </div>
+</body>
+</html>
