@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Ch6HOP 6.6 — Lighthouse Island Bistro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background:#00005D; font-family: Verdana, Arial, sans-serif; }
+
+    #wrapper{
+      width:80%;
+      min-width:960px;
+      max-width:1200px;
+      margin:0 auto;
+      background:#B3C7E6;
+      color:#000066;
+    }
+
+    header{
+      background:#869DC7;
+      color:#00005D;
+      font-size:150%;
+      padding:10px 10px 10px 155px;     
+      background-image:url("./images/lightlogo.jpg");
+      background-repeat:no-repeat;
+      background-position:10px center;
+    }
+    header a{ text-decoration:none; }
+    header a:link, header a:visited{ color:#00005D; }
+    header a:hover{ color:#FFFFFF; }
+
+    nav{
+      float:right;
+      width:200px;
+      font-weight:bold;
+      letter-spacing:0.1em;
+    }
+    nav ul{ list-style:none; margin:0; padding:0; }
+    nav a{
+      display:block;
+      padding:20px;
+      text-decoration:none;
+      background:#B3C7E6;
+      border-bottom:1px solid #FFFFFF;
+    }
+    nav a:link{ color:#FFFFFF; }
+    nav a:visited{ color:#EAEAEA; }
+    nav a:hover{ color:#869DC7; background:#EAEAEA; }
+
+    main{
+      background:#FFFFFF;
+      color:#000;
+      padding:10px 20px;
+      display:block;     
+      overflow:auto;
+    }
+    h2{ color:#869DC7; font-family: Arial, sans-serif; margin-top:0; }
+
+    #floatright{
+      float:right;
+      margin:10px;
+      border:1px solid #999;
+      max-width:40%;
+      height:auto;
+    }
+
+    footer{
+      font-size:70%;
+      text-align:center;
+      padding:10px;
+      background:#869DC7;
+      clear:both;
+    }
+    
+    @media (max-width:980px){
+      #wrapper{ width:95%; min-width:auto; }
+      nav{ float:none; width:auto; }
+      #floatright{ float:none; max-width:100%; display:block; margin:10px auto; }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <a href="#"><strong>Lighthouse Island Bistro</strong></a>
+    </header>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Directions</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Locally Roasted Free-Trade Coffee</h2>
+      <img id="floatright" src="./images/lighthouse.jpg" alt="Lighthouse at the bay">
+      <p>
+        Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available
+        hot or iced.
+      </p>
+
+      <h2>Specialty Pastries</h2>
+      <p>
+        Enjoy a selection of freshly baked organic pastries, including fresh-fruit muffins, scones, croissants, and cinnamon rolls.
+    
+      </p>
+    </main>
+
+    <footer>
+      <small>&copy; 2020 Lighthouse Island Bistro</small>
+    </footer>
+  </div>
+</body>
+</html>
