@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Days of The Week Survey</title>
+</head>
+<body>
+
+<h1>Days of The Week Survey</h1>
+
+<form action="https://webdevbasics.net/scripts/demo.php" method="post">
+
+<label>Username:</label>
+<input type="text" name="username" maxlength="30"><br><br>
+
+<p>Favorite Day of the Week:</p>
+<input type="radio" name="weekday" value="Mon"> Monday
+<input type="radio" name="weekday" value="Fri"> Tuesday
+<input type="radio" name="weekday" value="Sat"> Wednesday
+<input type="radio" name="weekday" value="Sat"> Thursday
+<input type="radio" name="weekday" value="Fri"> Friday
+<input type="radio" name="weekday" value="Sat"> Saturday
+<input type="radio" name="weekday" value="Sat"> Sunday
+<br><br>
+
+<label>Favorite Social Media:</label>
+<select name="social">
+  <option value="TikTok">TikTok</option>
+  <option value="Instagram">Instagram</option>
+  <option value="Snapchat">Snapchat</option>
+  <option value="Pinterest">Pinterest</option>
+</select><br><br>
+
+<fieldset>
+<legend>Shipping Address</legend>
+<label>Address Line 1:</label>
+<input type="text" name="addr1"><br><br>
+
+<label>Address Line 2:</label>
+<input type="text" name="addr2"><br><br>
+
+<label>City:</label>
+<input type="text" name="city"><br><br>
+
+<label>State:</label>
+<input type="text" name="state"><br><br>
+
+<label>Zip:</label>
+<input type="text" name="zip"><br><br>
+</fieldset>
+<br>
+
+<input type="image" src="signup.gif" alt="Sign Up"><br><br>
+
+<input type="hidden" name="userid" value="001">
+
+<label>Pword:</label>
+<input type="password" name="pword"><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+</body>
+</html>
