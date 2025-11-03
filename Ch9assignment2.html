@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Music Survey Form</title>
+<style>
+form {
+  background:#EAEAEA;
+  width:450px;
+  font-family:Arial, sans-serif;
+  padding:15px;
+}
+label {
+  display:block;
+  margin-top:10px;
+}
+fieldset {
+  margin-top:15px;
+  padding:10px;
+}
+input[type="submit"], input[type="reset"] {
+  margin-top:15px;
+}
+footer {
+  margin-top:25px;
+  font-size:0.9em;
+}
+</style>
+</head>
+<body>
+
+<h1>Music Survey</h1>
+
+<form>
+
+<label for="myName">Name:</label>
+<input type="text" name="myName" id="myName">
+
+<label for="myEmail">E-mail:</label>
+<input type="email" name="myEmail" id="myEmail">
+
+<label>What role does music play in your life?</label>
+<textarea name="why" rows="3" cols="60"></textarea>
+
+<fieldset>
+<legend>Favorite Genre</legend>
+<input type="radio" name="genre" value="Country"> Pop<br>
+<input type="radio" name="genre" value="Pop"> Rock<br>
+<input type="radio" name="genre" value="Rock"> Country<br>
+</fieldset>
+
+<label>Favorite Artist:</label>
+<select size="3" name="artist">
+<option>Taylor Swift</option>
+<option>Noah Kahan</option>
+<option>Sabrina Carpenter</option>
+<option>AC/DC</option>
+</select>
+
+<label>Date</label>
+<input type="date" name="musicDate">
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+<footer>
+<p>Grace Arendsee</p>
+<p>arendseegr@mail.lipscomb.edu</p>
+</footer>
+
+</body>
+</html>
